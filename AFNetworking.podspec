@@ -55,9 +55,9 @@ EOS
     ss.ios.deployment_target = '7.0'
     ss.osx.deployment_target = '10.9'
 
-    ss.dependency 'AFNetworking/Serialization'
-    ss.dependency 'AFNetworking/Reachability'
-    ss.dependency 'AFNetworking/Security'
+    ss.dependency 'LPCAFNetworking/Serialization'
+    ss.dependency 'LPCAFNetworking/Reachability'
+    ss.dependency 'LPCAFNetworking/Security'
 
     ss.source_files = 'AFNetworking/AFURLConnectionOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperationManager.{h,m}'
     ss.public_header_files = 'AFNetworking/AFURLConnectionOperation.h', 'AFNetworking/AFHTTPRequestOperation.h', 'AFNetworking/AFHTTPRequestOperationManager.h'
@@ -68,10 +68,10 @@ EOS
     ss.osx.deployment_target = '10.9'
     ss.watchos.deployment_target = '2.0'
 
-    ss.dependency 'AFNetworking/Serialization'
-    ss.ios.dependency 'AFNetworking/Reachability'
-    ss.osx.dependency 'AFNetworking/Reachability'
-    ss.dependency 'AFNetworking/Security'
+    ss.dependency 'LPCAFNetworking/Serialization'
+    ss.ios.dependency 'LPCAFNetworking/Reachability'
+    ss.osx.dependency 'LPCAFNetworking/Reachability'
+    ss.dependency 'LPCAFNetworking/Security'
 
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}'
     ss.public_header_files = 'AFNetworking/AF{URL,HTTP}SessionManager.h'
@@ -79,8 +79,8 @@ EOS
 
   s.subspec 'UIKit' do |ss|
     ss.platform = :ios
-    ss.dependency 'AFNetworking/NSURLConnection'
-    ss.dependency 'AFNetworking/NSURLSession'
+    ss.dependency 'LPCAFNetworking/NSURLConnection'
+    ss.dependency 'LPCAFNetworking/NSURLSession'
 
     ss.public_header_files = 'UIKit+AFNetworking/*.h'
     ss.source_files = 'UIKit+AFNetworking'
